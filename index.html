@@ -63,13 +63,8 @@
         .navbar ul {
             display: none;
         }
-        .a-tag li {
-            /* display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap; */
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+        .tag {
+           gap: 10px;
         }
         .navbar {
             display: flex;
@@ -82,6 +77,11 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+        }
+        .tag {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
         }
         .hero {
@@ -174,7 +174,7 @@
         }
         .tag:hover {
             transform: scale(1.05);
-            /* box-shadow: 0 0 20px #fcdd00; */
+            box-shadow: 0 0 20px #fcdd00;
         }
         .radar {
             /* display: grid;
@@ -194,6 +194,10 @@
             border-radius: 10px;
             /* margin: 0 auto; */
             width: 100%;
+        }
+        .btn1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #fcdd00;
         }
         .quick h1 {
             font-family: 
@@ -237,8 +241,9 @@
             cursor: pointer;
         }
         .quickbtn:hover {
-            /* padding: 10px; */
             transform: translateY(-5px);
+            /* transform: scale(1.05); */
+            box-shadow: 0 0 10px yellowgreen;
         }
         .footer {
             background-color: black;
